@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33b44e43-2578-4592-b3db-fe78b0cd9d69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/main/VendingMachineTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/VendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/main/VendingMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/VendingMachineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +45,7 @@
       <recent name="main" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="main" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -58,12 +57,12 @@
       <module name="VendingMachine" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.VendingMachineTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VendingMachineTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -89,10 +88,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="598" y="336" width="484" height="235" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589876431676">
+    <state x="598" y="336" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589877971633">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state x="598" y="336" width="484" height="235" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/81.24.1519.876@81.24.1519.876" timestamp="1589876431676" />
+    <state x="598" y="336" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/81.24.1519.876@81.24.1519.876" timestamp="1589877971633" />
     <state x="328" y="26" key="SettingsEditor" timestamp="1589877700683">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
