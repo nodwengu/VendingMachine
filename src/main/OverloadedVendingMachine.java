@@ -16,12 +16,12 @@ public class OverloadedVendingMachine {
       this.chocolateStockLevel = chocolatesQty;
    }
    
-   //Buying a product decrease the number of products in stock by one.
+   // Buying a product decrease the number of products in stock by one.
    // The stock level for a product can’t be negative.
-   
+  
    public void buy(SoftDrink softDrink){
       if(softDrinkStockLevel > 0) {
-         softDrinkStockLevel -= 1;
+         softDrinkStockLevel--;
       } else {
          System.out.println("Soft drink out of stock");
       }
@@ -29,15 +29,15 @@ public class OverloadedVendingMachine {
    
    public void buy(SaltySnack saltySnack){
       if(saltySnackStockLevel > 0) {
-         saltySnackStockLevel -= 1;
+         saltySnackStockLevel--;
       } else {
-         System.out.println("Salt snack out of stock");
+         System.out.println("Salty snack out of stock");
       }
    }
    
    public void buy(Chocolate chocolate){
       if(chocolateStockLevel > 0) {
-         chocolateStockLevel -= 1;
+         chocolateStockLevel--;
       } else {
          System.out.println("Chocolate out of stock");
       }
@@ -45,13 +45,13 @@ public class OverloadedVendingMachine {
    
    public void buy(Product product){
       if(softDrinkStockLevel > 0)
-         softDrinkStockLevel -= 1;
+         softDrinkStockLevel--;
       
       if(saltySnackStockLevel > 0)
-         saltySnackStockLevel -= 1;
+         saltySnackStockLevel--;
    
       if(chocolateStockLevel > 0)
-         chocolateStockLevel -= 1;
+         chocolateStockLevel--;
    }
    
    public void addStock(SoftDrink softDrink){
@@ -86,6 +86,35 @@ public class OverloadedVendingMachine {
    
    public int getStock(Product product){
       return softDrinkStockLevel + saltySnackStockLevel + chocolateStockLevel;
+   }
+   
+   
+   public void buy(SoftDrink softDrink, int quantity) {
+      if(softDrinkStockLevel > 0)
+         softDrinkStockLevel -= quantity;
+   }
+   
+   public void buy(SaltySnack saltySnack, int quantity) {
+      if(saltySnackStockLevel > 0)
+         saltySnackStockLevel -= quantity;
+   }
+   
+   public void buy(Chocolate chocolate, int quantity) {
+      if(chocolateStockLevel > 0)
+         chocolateStockLevel -= quantity;
+   }
+   
+   
+   public void addStock(SoftDrink softDrink, int quantity) {
+      softDrinkStockLevel += quantity;
+   }
+   
+   public void addStock(SaltySnack saltySnack, int quantity) {
+      saltySnackStockLevel += quantity;
+   }
+   
+   public void addStock(Chocolate chocolate, int quantity) {
+      chocolateStockLevel += quantity;
    }
    
 }

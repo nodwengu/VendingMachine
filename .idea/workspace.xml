@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33b44e43-2578-4592-b3db-fe78b0cd9d69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/vending/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/vending/product/Chocolate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/vending/product/SaltySnack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/vending/product/SoftDrink.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/OverloadedVendingMachine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/VendingMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/OverloadedVendingMachineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/OverloadedVendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/OverloadedVendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/vending/product/SoftDrink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/vending/product/SoftDrink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/OverloadedVendingMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/OverloadedVendingMachineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,22 +113,22 @@
       <screen x="81" y="24" width="1519" height="876" />
     </state>
     <state x="602" y="62" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/81.24.1519.876@81.24.1519.876" timestamp="1589879304126" />
-    <state width="1473" height="237" key="GridCell.Tab.0.bottom" timestamp="1589887117691">
+    <state width="1473" height="237" key="GridCell.Tab.0.bottom" timestamp="1589891920194">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state width="1473" height="237" key="GridCell.Tab.0.bottom/81.24.1519.876@81.24.1519.876" timestamp="1589887117691" />
-    <state width="1473" height="237" key="GridCell.Tab.0.center" timestamp="1589887117688">
+    <state width="1473" height="237" key="GridCell.Tab.0.bottom/81.24.1519.876@81.24.1519.876" timestamp="1589891920194" />
+    <state width="1473" height="237" key="GridCell.Tab.0.center" timestamp="1589891920193">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state width="1473" height="237" key="GridCell.Tab.0.center/81.24.1519.876@81.24.1519.876" timestamp="1589887117688" />
-    <state width="1473" height="237" key="GridCell.Tab.0.left" timestamp="1589887117688">
+    <state width="1473" height="237" key="GridCell.Tab.0.center/81.24.1519.876@81.24.1519.876" timestamp="1589891920193" />
+    <state width="1473" height="237" key="GridCell.Tab.0.left" timestamp="1589891920193">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state width="1473" height="237" key="GridCell.Tab.0.left/81.24.1519.876@81.24.1519.876" timestamp="1589887117688" />
-    <state width="1473" height="237" key="GridCell.Tab.0.right" timestamp="1589887117689">
+    <state width="1473" height="237" key="GridCell.Tab.0.left/81.24.1519.876@81.24.1519.876" timestamp="1589891920193" />
+    <state width="1473" height="237" key="GridCell.Tab.0.right" timestamp="1589891920194">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state width="1473" height="237" key="GridCell.Tab.0.right/81.24.1519.876@81.24.1519.876" timestamp="1589887117689" />
+    <state width="1473" height="237" key="GridCell.Tab.0.right/81.24.1519.876@81.24.1519.876" timestamp="1589891920194" />
     <state x="328" y="26" key="SettingsEditor" timestamp="1589877700683">
       <screen x="81" y="24" width="1519" height="876" />
     </state>

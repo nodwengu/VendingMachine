@@ -127,5 +127,78 @@ class OverloadedVendingMachineTest {
       vendingMachine.addStock(product);
       assertEquals(46, vendingMachine.getStock(product));
    }
+   
+   @Test
+   void shouldBeAbleToBuySpecificQuantityForSoftDrink() {
+      OverloadedVendingMachine vendingMachine = new OverloadedVendingMachine(10, 20, 30);
+      SoftDrink softDrink = new SoftDrink();
+      
+      vendingMachine.buy(softDrink, 4);
+      assertEquals(6, vendingMachine.getStock(softDrink));
+      
+      vendingMachine.buy(softDrink, 4);
+      assertEquals(2, vendingMachine.getStock(softDrink));
+   }
+   
+   @Test
+   void shouldBeAbleToBuySpecificQuantityForSaltySnack() {
+      OverloadedVendingMachine vendingMachine = new OverloadedVendingMachine(10, 20, 30);
+      SaltySnack saltySnack = new SaltySnack();
+
+      vendingMachine.buy(saltySnack, 4);
+      assertEquals(16, vendingMachine.getStock(saltySnack));
+
+      vendingMachine.buy(saltySnack, 6);
+      assertEquals(10, vendingMachine.getStock(saltySnack));
+   }
+
+   @Test
+   void shouldBeAbleToBuySpecificQuantityForChocolate() {
+      OverloadedVendingMachine vendingMachine = new OverloadedVendingMachine(10, 20, 30);
+      Chocolate chocolate = new Chocolate();
+
+      vendingMachine.buy(chocolate, 4);
+      assertEquals(26, vendingMachine.getStock(chocolate));
+
+      vendingMachine.buy(chocolate, 4);
+      assertEquals(22, vendingMachine.getStock(chocolate));
+   }
+   
+   @Test
+   void shouldBeAbleToAddSpecificQuantityForSoftDrink() {
+      OverloadedVendingMachine vendingMachine = new OverloadedVendingMachine(1, 20, 30);
+      SoftDrink softDrink = new SoftDrink();
+      
+      vendingMachine.addStock(softDrink, 9);
+      assertEquals(10, vendingMachine.getStock(softDrink));
+      
+      vendingMachine.addStock(softDrink, 90);
+      assertEquals(100, vendingMachine.getStock(softDrink));
+   }
+   
+   @Test
+   void shouldBeAbleToAddSpecificQuantityForSaltySnack() {
+      OverloadedVendingMachine vendingMachine = new OverloadedVendingMachine(10, 0, 30);
+      SaltySnack saltySnack = new SaltySnack();
+
+      vendingMachine.addStock(saltySnack, 16);
+      assertEquals(16, vendingMachine.getStock(saltySnack));
+
+      vendingMachine.addStock(saltySnack, 5);
+      assertEquals(21, vendingMachine.getStock(saltySnack));
+   }
+   
+   @Test
+   void shouldBeAbleToAddSpecificQuantityForChocolate() {
+      OverloadedVendingMachine vendingMachine = new OverloadedVendingMachine(10, 20, 30);
+      Chocolate chocolate = new Chocolate();
+
+      vendingMachine.addStock(chocolate, 4);
+      assertEquals(34, vendingMachine.getStock(chocolate));
+
+      vendingMachine.addStock(chocolate, 10);
+      assertEquals(44, vendingMachine.getStock(chocolate));
+   }
+
 
 }
