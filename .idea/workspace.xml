@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33b44e43-2578-4592-b3db-fe78b0cd9d69" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/main/VendingMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/VendingMachineTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/vending/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/vending/product/Chocolate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/vending/product/SaltySnack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/vending/product/SoftDrink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/OverloadedVendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/VendingMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/OverloadedVendingMachineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -21,7 +27,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1c7O9aQRMrzVKCshDSeykAkQnvZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -45,6 +53,7 @@
       <recent name="main" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="main.vending.product" />
       <recent name="" />
       <recent name="main" />
     </key>
@@ -52,8 +61,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="VendingMachineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.OverloadedVendingMachineTest">
+    <configuration name="OverloadedVendingMachineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VendingMachine" />
       <extension name="coverage">
         <pattern>
@@ -62,15 +71,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="VendingMachineTest" />
+      <option name="MAIN_CLASS_NAME" value="OverloadedVendingMachineTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OverloadedVendingMachineTest.shouldBeAbleToBuyChocolate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VendingMachine" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OverloadedVendingMachineTest" />
+      <option name="METHOD_NAME" value="shouldBeAbleToBuyChocolate" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VendingMachineTest" />
+        <item itemvalue="JUnit.OverloadedVendingMachineTest" />
+        <item itemvalue="JUnit.OverloadedVendingMachineTest.shouldBeAbleToBuyChocolate" />
       </list>
     </recent_temporary>
   </component>
@@ -88,10 +108,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="598" y="336" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589877971633">
+    <state x="598" y="336" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589880801582">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state x="598" y="336" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/81.24.1519.876@81.24.1519.876" timestamp="1589877971633" />
+    <state x="598" y="336" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/81.24.1519.876@81.24.1519.876" timestamp="1589880801582" />
+    <state x="602" y="62" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589879304126">
+      <screen x="81" y="24" width="1519" height="876" />
+    </state>
+    <state x="602" y="62" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/81.24.1519.876@81.24.1519.876" timestamp="1589879304126" />
+    <state width="1473" height="237" key="GridCell.Tab.0.bottom" timestamp="1589887117691">
+      <screen x="81" y="24" width="1519" height="876" />
+    </state>
+    <state width="1473" height="237" key="GridCell.Tab.0.bottom/81.24.1519.876@81.24.1519.876" timestamp="1589887117691" />
+    <state width="1473" height="237" key="GridCell.Tab.0.center" timestamp="1589887117688">
+      <screen x="81" y="24" width="1519" height="876" />
+    </state>
+    <state width="1473" height="237" key="GridCell.Tab.0.center/81.24.1519.876@81.24.1519.876" timestamp="1589887117688" />
+    <state width="1473" height="237" key="GridCell.Tab.0.left" timestamp="1589887117688">
+      <screen x="81" y="24" width="1519" height="876" />
+    </state>
+    <state width="1473" height="237" key="GridCell.Tab.0.left/81.24.1519.876@81.24.1519.876" timestamp="1589887117688" />
+    <state width="1473" height="237" key="GridCell.Tab.0.right" timestamp="1589887117689">
+      <screen x="81" y="24" width="1519" height="876" />
+    </state>
+    <state width="1473" height="237" key="GridCell.Tab.0.right/81.24.1519.876@81.24.1519.876" timestamp="1589887117689" />
     <state x="328" y="26" key="SettingsEditor" timestamp="1589877700683">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
@@ -104,5 +144,9 @@
       <screen x="81" y="24" width="1519" height="876" />
     </state>
     <state x="619" y="166" key="com.intellij.testIntegration.createTest.CreateTestDialog/81.24.1519.876@81.24.1519.876" timestamp="1589877552916" />
+    <state x="504" y="201" width="672" height="677" key="run.anything.popup" timestamp="1589886228973">
+      <screen x="81" y="24" width="1519" height="876" />
+    </state>
+    <state x="504" y="201" width="672" height="677" key="run.anything.popup/81.24.1519.876@81.24.1519.876" timestamp="1589886228973" />
   </component>
 </project>
