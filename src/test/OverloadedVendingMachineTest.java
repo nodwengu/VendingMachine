@@ -1,6 +1,7 @@
 import main.OverloadedVendingMachine;
 import main.vending.Product;
 import main.vending.product.Chocolate;
+import main.vending.product.Peanut;
 import main.vending.product.SaltySnack;
 import main.vending.product.SoftDrink;
 import org.junit.jupiter.api.*;
@@ -125,7 +126,7 @@ class OverloadedVendingMachineTest {
       
       vendingMachine.addStock(product);
       vendingMachine.addStock(product);
-      assertEquals(46, vendingMachine.getStock(product));
+      assertEquals(52, vendingMachine.getStock(product));
    }
    
    @Test
@@ -199,6 +200,84 @@ class OverloadedVendingMachineTest {
       vendingMachine.addStock(chocolate, 10);
       assertEquals(44, vendingMachine.getStock(chocolate));
    }
+   
+   @Test
+   void shouldBeAbleToAddSpecificQuantityForAllProducts() {
+      OverloadedVendingMachine vendingMachine = new OverloadedVendingMachine(0, 0, 0);
+      Product product = new Product();
+      
+      vendingMachine.addStock(product, 5);
+      assertEquals(5, vendingMachine.getStock(new SoftDrink()));
+      assertEquals(5, vendingMachine.getStock(new SaltySnack()));
+      assertEquals(5, vendingMachine.getStock(new Chocolate()));
+      assertEquals(5, vendingMachine.getStock(new Peanut()));
+      
+      assertEquals(20, vendingMachine.getStock(product));
+      
+      vendingMachine.addStock(product, 10);
+      assertEquals(15, vendingMachine.getStock(new SoftDrink()));
+      assertEquals(15, vendingMachine.getStock(new SaltySnack()));
+      assertEquals(15, vendingMachine.getStock(new Chocolate()));
+      assertEquals(15, vendingMachine.getStock(new Peanut()));
+      assertEquals(60, vendingMachine.getStock(product));
+   }
+   
+   
+   
+   @Test
+   void shouldBeAbleToBuyPeanuts() {
+      OverloadedVendingMachine vendingMachine = new OverloadedVendingMachine(1, 15, 20, 10);
+      Peanut peanut = new Peanut();
+      
+      assertEquals("This is a peanut", peanut.description());
+      assertEquals(10, vendingMachine.getStock(peanut));
+      
+      vendingMachine.buy(peanut);
+      vendingMachine.buy(peanut);
+      vendingMachine.buy(peanut);
+      
+      assertEquals(7, vendingMachine.getStock(peanut));
+   }
+   
+   @Test
+   void shouldBeAbleToBuySpecificQuantityForPeanuts() {
+      OverloadedVendingMachine vendingMachine = new OverloadedVendingMachine(10, 20, 30, 20);
+      Peanut peanut = new Peanut();
+
+      vendingMachine.buy(peanut, 4);
+      assertEquals(16, vendingMachine.getStock(peanut));
+
+      vendingMachine.buy(peanut, 6);
+      assertEquals(10, vendingMachine.getStock(peanut));
+   }
+   
+   @Test
+   void shouldBeAbleToAddPeanutsStock() {
+      OverloadedVendingMachine vendingMachine = new OverloadedVendingMachine(10, 15, 10, 0);
+      Peanut peanut = new Peanut();
+
+      assertEquals("This is a peanut", peanut.description());
+      assertEquals(0, vendingMachine.getStock(peanut));
+
+      vendingMachine.addStock(peanut);
+      vendingMachine.addStock(peanut);
+      assertEquals(6, vendingMachine.getStock(peanut));
+   }
+   
+   @Test
+   void shouldBeAbleToAddSpecificQuantityForPeanuts() {
+      OverloadedVendingMachine vendingMachine = new OverloadedVendingMachine(10, 0, 30, 0);
+      Peanut peanut = new Peanut();
+
+      vendingMachine.addStock(peanut, 16);
+      assertEquals(16, vendingMachine.getStock(peanut));
+
+      vendingMachine.addStock(peanut, 5);
+      assertEquals(21, vendingMachine.getStock(peanut));
+   }
+
+
+
 
 
 }

@@ -2,6 +2,7 @@ package main;
 
 import main.vending.*;
 import main.vending.product.Chocolate;
+import main.vending.product.Peanut;
 import main.vending.product.SaltySnack;
 import main.vending.product.SoftDrink;
 
@@ -9,11 +10,19 @@ public class OverloadedVendingMachine {
    private int softDrinkStockLevel;
    private int saltySnackStockLevel;
    private int chocolateStockLevel;
+   private int peanutStockLevel;
    
    public OverloadedVendingMachine(int softDrinkQty, int saltySnacksQty, int chocolatesQty){
       this.softDrinkStockLevel = softDrinkQty;
       this.saltySnackStockLevel = saltySnacksQty;
       this.chocolateStockLevel = chocolatesQty;
+   }
+   
+   public OverloadedVendingMachine(int softDrinkQty, int saltySnacksQty, int chocolatesQty, int peanutQty){
+      this.softDrinkStockLevel = softDrinkQty;
+      this.saltySnackStockLevel = saltySnacksQty;
+      this.chocolateStockLevel = chocolatesQty;
+      this.peanutStockLevel = peanutQty;
    }
    
    // Buying a product decrease the number of products in stock by one.
@@ -52,6 +61,9 @@ public class OverloadedVendingMachine {
    
       if(chocolateStockLevel > 0)
          chocolateStockLevel--;
+   
+      if(peanutStockLevel > 0)
+         peanutStockLevel--;
    }
    
    public void addStock(SoftDrink softDrink){
@@ -70,6 +82,7 @@ public class OverloadedVendingMachine {
       softDrinkStockLevel += 3;
       saltySnackStockLevel += 3;
       chocolateStockLevel += 3;
+      peanutStockLevel += 3;
    }
    
    public int getStock(SoftDrink softDrink){
@@ -85,7 +98,7 @@ public class OverloadedVendingMachine {
    }
    
    public int getStock(Product product){
-      return softDrinkStockLevel + saltySnackStockLevel + chocolateStockLevel;
+      return softDrinkStockLevel + saltySnackStockLevel + chocolateStockLevel + peanutStockLevel;
    }
    
    
@@ -104,6 +117,20 @@ public class OverloadedVendingMachine {
          chocolateStockLevel -= quantity;
    }
    
+   public void buy(Product product, int quantity){
+      if(softDrinkStockLevel > 0)
+         softDrinkStockLevel -= quantity;
+      
+      if(saltySnackStockLevel > 0)
+         saltySnackStockLevel -= quantity;
+      
+      if(chocolateStockLevel > 0)
+         chocolateStockLevel -= quantity;
+      
+      if(peanutStockLevel > 0)
+         peanutStockLevel -= quantity;
+   }
+   
    
    public void addStock(SoftDrink softDrink, int quantity) {
       softDrinkStockLevel += quantity;
@@ -115,6 +142,39 @@ public class OverloadedVendingMachine {
    
    public void addStock(Chocolate chocolate, int quantity) {
       chocolateStockLevel += quantity;
+   }
+   
+   public void addStock(Product product, int quantity){
+      softDrinkStockLevel += quantity;
+      saltySnackStockLevel += quantity;
+      chocolateStockLevel += quantity;
+      peanutStockLevel += quantity;
+   }
+   
+   
+   public void buy(Peanut peanut){
+      if(peanutStockLevel > 0) {
+         peanutStockLevel--;
+      } else {
+         System.out.println("peanut out of stock");
+      }
+   }
+   
+   public void buy(Peanut peanut, int quantity) {
+      if(peanutStockLevel > 0)
+         peanutStockLevel -= quantity;
+   }
+   
+   public void addStock(Peanut peanut){
+      peanutStockLevel += 3;
+   }
+   
+   public void addStock(Peanut peanut, int quantity) {
+      peanutStockLevel += quantity;
+   }
+   
+   public int getStock(Peanut peanut){
+      return peanutStockLevel;
    }
    
 }
