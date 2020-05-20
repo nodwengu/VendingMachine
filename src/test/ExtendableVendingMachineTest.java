@@ -1,6 +1,5 @@
-package main.vending;
-
 import main.ExtendableVendingMachine;
+import main.vending.Product;
 import main.vending.product.Chocolate;
 import main.vending.product.SaltySnack;
 import main.vending.product.SoftDrink;

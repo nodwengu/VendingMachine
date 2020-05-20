@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33b44e43-2578-4592-b3db-fe78b0cd9d69" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/ExtendableVendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ExtendableVendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/main/vending/ExtendableVendingMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ExtendableVendingMachineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +48,9 @@
       <recent name="main" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="main" />
       <recent name="main.vending.product" />
-      <recent name="" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -65,8 +65,8 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="main.vending" />
-      <option name="MAIN_CLASS_NAME" value="main.vending.ExtendableVendingMachineTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExtendableVendingMachineTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,10 +130,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="598" y="336" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589994318234">
+    <state x="598" y="336" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589996657074">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state x="598" y="336" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/81.24.1519.876@81.24.1519.876" timestamp="1589994318234" />
+    <state x="598" y="336" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/81.24.1519.876@81.24.1519.876" timestamp="1589996657074" />
     <state x="602" y="62" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589879304126">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
