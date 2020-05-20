@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33b44e43-2578-4592-b3db-fe78b0cd9d69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/vending/product/Peanut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ExtendableVendingMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/main/vending/ExtendableVendingMachineTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/OverloadedVendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/OverloadedVendingMachine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/OverloadedVendingMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/OverloadedVendingMachineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -47,18 +46,34 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="main.vending" />
       <recent name="main" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="main" />
       <recent name="main.vending.product" />
       <recent name="" />
-      <recent name="main" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OverloadedVendingMachineTest">
+  <component name="RunManager" selected="JUnit.ExtendableVendingMachineTest">
+    <configuration name="ExtendableVendingMachineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VendingMachine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.vending" />
+      <option name="MAIN_CLASS_NAME" value="main.vending.ExtendableVendingMachineTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OverloadedVendingMachineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VendingMachine" />
       <extension name="coverage">
@@ -96,6 +111,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExtendableVendingMachineTest" />
         <item itemvalue="JUnit.OverloadedVendingMachineTest" />
         <item itemvalue="JUnit.OverloadedVendingMachineTest.shouldBeAbleToAddSpecificQuantityForAllProducts" />
         <item itemvalue="JUnit.OverloadedVendingMachineTest.shouldBeAbleToBuyChocolate" />
@@ -116,30 +132,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="598" y="336" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589880801582">
+    <state x="598" y="336" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589994318234">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state x="598" y="336" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/81.24.1519.876@81.24.1519.876" timestamp="1589880801582" />
+    <state x="598" y="336" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/81.24.1519.876@81.24.1519.876" timestamp="1589994318234" />
     <state x="602" y="62" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589879304126">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
     <state x="602" y="62" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/81.24.1519.876@81.24.1519.876" timestamp="1589879304126" />
-    <state width="1473" height="237" key="GridCell.Tab.0.bottom" timestamp="1589961399886">
+    <state width="1473" height="237" key="GridCell.Tab.0.bottom" timestamp="1589995390869">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state width="1473" height="237" key="GridCell.Tab.0.bottom/81.24.1519.876@81.24.1519.876" timestamp="1589961399886" />
-    <state width="1473" height="237" key="GridCell.Tab.0.center" timestamp="1589961399885">
+    <state width="1473" height="237" key="GridCell.Tab.0.bottom/81.24.1519.876@81.24.1519.876" timestamp="1589995390869" />
+    <state width="1473" height="237" key="GridCell.Tab.0.center" timestamp="1589995390867">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state width="1473" height="237" key="GridCell.Tab.0.center/81.24.1519.876@81.24.1519.876" timestamp="1589961399885" />
-    <state width="1473" height="237" key="GridCell.Tab.0.left" timestamp="1589961399885">
+    <state width="1473" height="237" key="GridCell.Tab.0.center/81.24.1519.876@81.24.1519.876" timestamp="1589995390867" />
+    <state width="1473" height="237" key="GridCell.Tab.0.left" timestamp="1589995390866">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state width="1473" height="237" key="GridCell.Tab.0.left/81.24.1519.876@81.24.1519.876" timestamp="1589961399885" />
-    <state width="1473" height="237" key="GridCell.Tab.0.right" timestamp="1589961399886">
+    <state width="1473" height="237" key="GridCell.Tab.0.left/81.24.1519.876@81.24.1519.876" timestamp="1589995390866" />
+    <state width="1473" height="237" key="GridCell.Tab.0.right" timestamp="1589995390868">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state width="1473" height="237" key="GridCell.Tab.0.right/81.24.1519.876@81.24.1519.876" timestamp="1589961399886" />
+    <state width="1473" height="237" key="GridCell.Tab.0.right/81.24.1519.876@81.24.1519.876" timestamp="1589995390868" />
     <state x="328" y="26" key="SettingsEditor" timestamp="1589877700683">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
@@ -152,10 +168,14 @@
       <screen x="81" y="24" width="1519" height="876" />
     </state>
     <state x="517" y="344" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/81.24.1519.876@81.24.1519.876" timestamp="1589877687296" />
-    <state x="619" y="166" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589877552916">
+    <state x="499" y="67" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589993582810">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state x="619" y="166" key="com.intellij.testIntegration.createTest.CreateTestDialog/81.24.1519.876@81.24.1519.876" timestamp="1589877552916" />
+    <state x="499" y="67" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/81.24.1519.876@81.24.1519.876" timestamp="1589993582810" />
+    <state x="619" y="166" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589987647823">
+      <screen x="81" y="24" width="1519" height="876" />
+    </state>
+    <state x="619" y="166" key="com.intellij.testIntegration.createTest.CreateTestDialog/81.24.1519.876@81.24.1519.876" timestamp="1589987647823" />
     <state x="504" y="201" width="672" height="677" key="run.anything.popup" timestamp="1589886228973">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
