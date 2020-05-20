@@ -94,7 +94,7 @@ public class ExtendableVendingMachine {
       else if(product instanceof Peanut)
          stockLevel = peanutStockLevel;
       else if(product instanceof Product)
-         stockLevel = softDrinkStockLevel + saltySnackStockLevel + chocolateStockLevel;
+         stockLevel = softDrinkStockLevel + saltySnackStockLevel + chocolateStockLevel + peanutStockLevel;
       else stockLevel = 0;
       
       return stockLevel;
