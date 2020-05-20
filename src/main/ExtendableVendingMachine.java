@@ -12,16 +12,16 @@ public class ExtendableVendingMachine {
    private int chocolateStockLevel;
    private int peanutStockLevel;
    
-   public ExtendableVendingMachine(int softDrinkStockLevel, int saltySnackStockLevel, int chocolateStockLevel) {
-      this.softDrinkStockLevel = softDrinkStockLevel;
-      this.saltySnackStockLevel = saltySnackStockLevel;
-      this.chocolateStockLevel = chocolateStockLevel;
+   public ExtendableVendingMachine(int softDrinkQuantity, int saltySnackQuantity, int chocolateQuantity) {
+      this.softDrinkStockLevel = softDrinkQuantity;
+      this.saltySnackStockLevel = saltySnackQuantity;
+      this.chocolateStockLevel = chocolateQuantity;
    }
-   public ExtendableVendingMachine(int softDrinkStockLevel, int saltySnackStockLevel, int chocolateStockLevel, int peanutStockLevel) {
-      this.softDrinkStockLevel = softDrinkStockLevel;
-      this.saltySnackStockLevel = saltySnackStockLevel;
-      this.chocolateStockLevel = chocolateStockLevel;
-      this.peanutStockLevel = peanutStockLevel;
+   public ExtendableVendingMachine(int softDrinkQuantity, int saltySnackQuantity, int chocolateQuantity, int peanutQuantity) {
+      this.softDrinkStockLevel = softDrinkQuantity;
+      this.saltySnackStockLevel = saltySnackQuantity;
+      this.chocolateStockLevel = chocolateQuantity;
+      this.peanutStockLevel = peanutQuantity;
    }
    
    
