@@ -6,6 +6,8 @@ import main.vending.product.Peanut;
 import main.vending.product.SaltySnack;
 import main.vending.product.SoftDrink;
 
+import java.util.Scanner;
+
 public class ExtendableVendingMachine {
    private int softDrinkStockLevel;
    private int saltySnackStockLevel;
@@ -100,3 +102,20 @@ public class ExtendableVendingMachine {
       return stockLevel;
    }
 }
+
+
+
+//class ExtendableMachineMain {
+//   public static void main(String[] args) {
+//      Scanner scanner = new Scanner(System.in);
+//      System.out.println("Takes ExtendableVendingMachine vending machine through it’s paces.");
+//
+//      ExtendableVendingMachine machine = new ExtendableVendingMachine(0, 0, 0, 0);
+//      Product product = new Product();
+//
+//      System.out.print("Enter your age: ");
+//      int age = scanner.nextInt();
+//      System.out.println("Age is: " + age);
+//
+//   }
+//}
