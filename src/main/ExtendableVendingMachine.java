@@ -2,11 +2,7 @@ package main;
 
 import main.vending.Product;
 import main.vending.product.Chocolate;
-import main.vending.product.Peanut;
-import main.vending.product.SaltySnack;
-import main.vending.product.SoftDrink;
-
-import java.util.Scanner;
+import main.vending.product.*;
 
 public class ExtendableVendingMachine {
    private int softDrinkStockLevel;
@@ -26,7 +22,6 @@ public class ExtendableVendingMachine {
       this.peanutStockLevel = peanutQuantity;
    }
    
-   
    public void buy(Product product) {
       if(product instanceof SoftDrink) {
          if(softDrinkStockLevel > 0)
@@ -45,19 +40,18 @@ public class ExtendableVendingMachine {
    
    public void buy(Product product, int quantity) {
       if(product instanceof SoftDrink) {
-         if(softDrinkStockLevel > 0)
+         if(softDrinkStockLevel >= quantity)
             softDrinkStockLevel -= quantity;
       } else if(product instanceof SaltySnack) {
-         if(saltySnackStockLevel > 0)
+         if(saltySnackStockLevel >= quantity)
             saltySnackStockLevel -= quantity;
       } else if(product instanceof Chocolate) {
-         if(chocolateStockLevel > 0)
+         if(chocolateStockLevel >= quantity)
             chocolateStockLevel -= quantity;
       } else if(product instanceof Peanut) {
-         if(peanutStockLevel > 0)
+         if(peanutStockLevel >= quantity)
             peanutStockLevel -= quantity;
       }
-      
    }
    
    public void addStock(Product product) {
@@ -102,20 +96,3 @@ public class ExtendableVendingMachine {
       return stockLevel;
    }
 }
-
-
-
-//class ExtendableMachineMain {
-//   public static void main(String[] args) {
-//      Scanner scanner = new Scanner(System.in);
-//      System.out.println("Takes ExtendableVendingMachine vending machine through it’s paces.");
-//
-//      ExtendableVendingMachine machine = new ExtendableVendingMachine(0, 0, 0, 0);
-//      Product product = new Product();
-//
-//      System.out.print("Enter your age: ");
-//      int age = scanner.nextInt();
-//      System.out.println("Age is: " + age);
-//
-//   }
-//}

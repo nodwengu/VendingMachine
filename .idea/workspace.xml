@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33b44e43-2578-4592-b3db-fe78b0cd9d69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/VendingMachine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ExtendableVendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ExtendableVendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/OverloadedVendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/OverloadedVendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/VendingMachineDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.VendingMachine">
+  <component name="RunManager" selected="Application.VendingMachineDemo">
     <configuration name="ExtendableMachineMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.ExtendableMachineMain" />
       <module name="VendingMachine" />
@@ -72,8 +73,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VendingMachine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.VendingMachine" />
+    <configuration name="VendingMachineDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.VendingMachineDemo" />
       <module name="VendingMachine" />
       <extension name="coverage">
         <pattern>
@@ -127,7 +128,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.VendingMachine" />
+        <item itemvalue="Application.VendingMachineDemo" />
         <item itemvalue="JUnit.ExtendableVendingMachineTest" />
         <item itemvalue="Application.ExtendableMachineMain" />
         <item itemvalue="JUnit.OverloadedVendingMachineTest" />
@@ -153,34 +154,34 @@
       <screen x="81" y="24" width="1519" height="876" />
     </state>
     <state x="598" y="336" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/81.24.1519.876@81.24.1519.876" timestamp="1589996657074" />
-    <state x="602" y="62" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589879304126">
+    <state x="602" y="24" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590612504455">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state x="602" y="62" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/81.24.1519.876@81.24.1519.876" timestamp="1589879304126" />
-    <state width="1473" height="237" key="GridCell.Tab.0.bottom" timestamp="1590019671436">
+    <state x="602" y="24" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/81.24.1519.876@81.24.1519.876" timestamp="1590612504455" />
+    <state width="1473" height="251" key="GridCell.Tab.0.bottom" timestamp="1590656958244">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state width="1473" height="237" key="GridCell.Tab.0.bottom/81.24.1519.876@81.24.1519.876" timestamp="1590019671436" />
-    <state width="1473" height="237" key="GridCell.Tab.0.center" timestamp="1590019671434">
+    <state width="1473" height="251" key="GridCell.Tab.0.bottom/81.24.1519.876@81.24.1519.876" timestamp="1590656958244" />
+    <state width="1473" height="251" key="GridCell.Tab.0.center" timestamp="1590656958243">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state width="1473" height="237" key="GridCell.Tab.0.center/81.24.1519.876@81.24.1519.876" timestamp="1590019671434" />
-    <state width="1473" height="237" key="GridCell.Tab.0.left" timestamp="1590019671433">
+    <state width="1473" height="251" key="GridCell.Tab.0.center/81.24.1519.876@81.24.1519.876" timestamp="1590656958243" />
+    <state width="1473" height="251" key="GridCell.Tab.0.left" timestamp="1590656958242">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state width="1473" height="237" key="GridCell.Tab.0.left/81.24.1519.876@81.24.1519.876" timestamp="1590019671433" />
-    <state width="1473" height="237" key="GridCell.Tab.0.right" timestamp="1590019671436">
+    <state width="1473" height="251" key="GridCell.Tab.0.left/81.24.1519.876@81.24.1519.876" timestamp="1590656958242" />
+    <state width="1473" height="251" key="GridCell.Tab.0.right" timestamp="1590656958243">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state width="1473" height="237" key="GridCell.Tab.0.right/81.24.1519.876@81.24.1519.876" timestamp="1590019671436" />
+    <state width="1473" height="251" key="GridCell.Tab.0.right/81.24.1519.876@81.24.1519.876" timestamp="1590656958243" />
     <state x="328" y="26" key="SettingsEditor" timestamp="1589877700683">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
     <state x="328" y="26" key="SettingsEditor/81.24.1519.876@81.24.1519.876" timestamp="1589877700683" />
-    <state x="501" y="277" key="com.intellij.ide.util.TipDialog" timestamp="1589957928837">
+    <state x="501" y="277" key="com.intellij.ide.util.TipDialog" timestamp="1590658273809">
       <screen x="81" y="24" width="1519" height="876" />
     </state>
-    <state x="501" y="277" key="com.intellij.ide.util.TipDialog/81.24.1519.876@81.24.1519.876" timestamp="1589957928836" />
+    <state x="501" y="277" key="com.intellij.ide.util.TipDialog/81.24.1519.876@81.24.1519.876" timestamp="1590658273809" />
     <state x="517" y="344" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1589877687296">
       <screen x="81" y="24" width="1519" height="876" />
     </state>

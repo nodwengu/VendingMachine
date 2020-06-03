@@ -8,46 +8,28 @@ import main.vending.product.SoftDrink;
 
 import java.util.Scanner;
 
-public class VendingMachine {
+public class VendingMachineDemo {
    public static void main(String[] args) {
       System.out.println();
-      
       go();
    }
    
    public static void go() {
       Scanner scanner = new Scanner(System.in);
-   
-      ExtendableVendingMachine machine = new ExtendableVendingMachine(10, 15, 20, 25);
-      Product product = new Product();
-      SoftDrink softDrink = new SoftDrink();
-      SaltySnack saltySnack = new SaltySnack();
-      Chocolate chocolate = new Chocolate();
-      Peanut peanut = new Peanut();
+      String option;
       
       System.out.print("Enter the letter 'b' / 'B' to buy OR 'a' / 'A' to add new stock: ");
-      char option = scanner.next().charAt(0);
+      option = scanner.nextLine();
       
-      //add functionality to buy a product from the vending machine
-      if (option == 'b' || option == 'B') {
+      if (option.equalsIgnoreCase("b")) {
          buyProduct();
          
-      } else if (option == 'a' || option == 'A') {
+      } else if (option.equalsIgnoreCase("a")) {
          addStock();
-      } else {
-         System.out.println("Incorrect action to perform code error");
-   
-         // Might want to add loop so to force the user to select the correct action
-         // Future implementation
       }
-      
-//      else {
-//         while (option != 'b' || option != 'B' || option != 'a' || option != 'A') {
-//            System.out.print("Enter the letter 'b' / 'B' to buy OR 'a' / 'A' to add new stock: ");
-//            option = scanner.next().charAt(0);
-//         }
-//      }
-   
+      else {
+         System.out.println("Incorrect action to perform code error");
+      }
    }
    
    public static void addStock() {
@@ -61,12 +43,11 @@ public class VendingMachine {
       Peanut peanut = new Peanut();
       
       System.out.println("Adding products to the stock...: ");
-      System.out.println("Add the code for the product you want to add to stock: ");
+      System.out.println("Please add the code for the product you want to add: ");
       System.out.print("SoftDrink (sd), SaltySnack (ss), Chocolate (c), Peanut (p) ");
       String choice = scanner.next();
+      System.out.println();
       
-      //BEING LAZY COPY AND PASTE, SAME FUNCTIONALITY ANYWAY
-   
       if( choice.equalsIgnoreCase("sd") ){
          System.out.println(softDrink.description());
          System.out.println("Soft drink initial stock = " + machine.getStock(softDrink));
@@ -111,13 +92,12 @@ public class VendingMachine {
          System.out.println("Peanuts stock: " + machine.getStock(peanut));
          System.out.println("All products stock: " + machine.getStock(product));
       } else {
+        
          System.out.println("Incorrect product code error");
       
          // Might want to add loop so to force the user to select the correct product code
          // Future implementation
       }
-      
-      
    }
    
    public static void buyProduct() {
@@ -132,12 +112,13 @@ public class VendingMachine {
       
       System.out.println("Buying a products: ");
       System.out.println("Choose code for product to buy: ");
-      System.out.print("SoftDrink (sd), SaltySnack (ss), Chocolate (c), Peanut (p) ");
+      System.out.print("SoftDrink (sd), SaltySnack (ss), Chocolate (c), Peanut (p): ");
       String choice = scanner.next();
    
       if( choice.equalsIgnoreCase("sd") ){
          System.out.println(softDrink.description());
-         System.out.print("Add number of drinks to buy? ");
+         System.out.println("Soft drink initial stock = " + machine.getStock(softDrink));
+         System.out.print("Add number of drinks to buy: ");
          int quantity = scanner.nextInt();
          System.out.println();
       
@@ -147,6 +128,7 @@ public class VendingMachine {
       
       } else if( choice.equalsIgnoreCase("ss") ) {
          System.out.println(saltySnack.description());
+         System.out.println("Snack initial stock = " + machine.getStock(saltySnack));
          System.out.print("Add number of snacks to buy: ");
          int quantity = scanner.nextInt();
          System.out.println();
@@ -157,6 +139,7 @@ public class VendingMachine {
       
       } else if( choice.equalsIgnoreCase("c") ) {
          System.out.println(chocolate.description());
+         System.out.println("Chocolate initial stock = " + machine.getStock(chocolate));
          System.out.print("Add number of chocolates to buy: ");
          int quantity = scanner.nextInt();
          System.out.println();
@@ -167,6 +150,7 @@ public class VendingMachine {
       
       } else if( choice.equalsIgnoreCase("p") ) {
          System.out.println(peanut.description());
+         System.out.println("Peanuts initial stock = " + machine.getStock(peanut));
          System.out.print("Add number of peanuts to buy: ");
          int quantity = scanner.nextInt();
          System.out.println();
@@ -181,6 +165,4 @@ public class VendingMachine {
          // Future implementation
       }
    }
-   
-   
 }

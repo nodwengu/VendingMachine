@@ -1,10 +1,7 @@
 package main;
 
 import main.vending.*;
-import main.vending.product.Chocolate;
-import main.vending.product.Peanut;
-import main.vending.product.SaltySnack;
-import main.vending.product.SoftDrink;
+import main.vending.product.*;
 
 public class OverloadedVendingMachine {
    private int softDrinkStockLevel;
@@ -25,9 +22,6 @@ public class OverloadedVendingMachine {
       this.peanutStockLevel = peanutQty;
    }
    
-   // Buying a product decrease the number of products in stock by one.
-   // The stock level for a product can’t be negative.
-  
    public void buy(SoftDrink softDrink){
       if(softDrinkStockLevel > 0) {
          softDrinkStockLevel--;
@@ -101,7 +95,6 @@ public class OverloadedVendingMachine {
       return softDrinkStockLevel + saltySnackStockLevel + chocolateStockLevel + peanutStockLevel;
    }
    
-   
    public void buy(SoftDrink softDrink, int quantity) {
       if(softDrinkStockLevel > 0)
          softDrinkStockLevel -= quantity;
@@ -131,7 +124,6 @@ public class OverloadedVendingMachine {
          peanutStockLevel -= quantity;
    }
    
-   
    public void addStock(SoftDrink softDrink, int quantity) {
       softDrinkStockLevel += quantity;
    }
@@ -150,7 +142,6 @@ public class OverloadedVendingMachine {
       chocolateStockLevel += quantity;
       peanutStockLevel += quantity;
    }
-   
    
    public void buy(Peanut peanut){
       if(peanutStockLevel > 0) {
@@ -176,5 +167,4 @@ public class OverloadedVendingMachine {
    public int getStock(Peanut peanut){
       return peanutStockLevel;
    }
-   
 }
